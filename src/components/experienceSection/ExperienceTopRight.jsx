@@ -4,14 +4,12 @@ const ExperienceTopRight = () => {
       <p className="text-lg text-center text-lightGrey">
         I specialize in{" "}
         <span className="font-bold text-white">
-          React and modern JavaScript
+          React.js, Node.js, and Spring Boot
         </span>
-        , leveraging best practices to create scalable and maintainable
-        solutions. <br />
-        My experience spans working on diverse projects, from small business
-        websites to{" "}
-        <span className="font-bold text-white">complex front-end systems</span>,
-        always aiming for clean code and exceptional user experiences.
+        , applying best practices to build scalable, maintainable, and efficient solutions. <br />
+        I have hands-on experience delivering a wide range of projects—from small business websites to{" "}
+        <span className="font-bold text-white">robust front-end architectures</span>,
+        with a strong focus on clean code, performance, and seamless user experiences.
       </p>
     </div>
   );
