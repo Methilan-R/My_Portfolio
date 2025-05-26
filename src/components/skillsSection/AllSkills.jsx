@@ -16,7 +16,7 @@ const skills = [
     icon: FaReact,
   },
   {
-    skill: "Spring Boot",
+    skill: "Java",
     icon: FaCss3Alt,
   },
   {
