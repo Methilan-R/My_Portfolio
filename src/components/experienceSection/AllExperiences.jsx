@@ -19,7 +19,7 @@ const experiences = [
   {
     job: "Software Associate",
     company: "Dgateway Innovation",
-    date: "2023 Sep - April",
+    date: "2023 Sep - 2024 April",
     responsibilities: [
       "Explaining and facilitating web development concepts.",
       "Help students with their assignments and grade them weekly.",
