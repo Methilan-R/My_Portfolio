@@ -20,19 +20,20 @@ const experiences = [
     company: "Dgateway Innovation",
     date: "2023 Sep - 2024 April",
     responsibilities: [
-      "Explaining and facilitating web development concepts.",
-      "Help students with their assignments and grade them weekly.",
-      "Provide support for students through their learning journey.",
+      "Developed and maintained full-stack applications using MERN stack.",
+      "Implemented new features and optimized existing functionalities.",
+      "Managed API integrations and database operations.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Sprints",
-    date: "2024 - Present",
+    job: "Delivered Projects",
+    company: "Dgateway Innovation",
+    date: "2024 - May",
     responsibilities: [
-      "Teaching JavaScript, React and TailwindCSS.",
-      "Participating in preparing course materials.",
-      "Helping students through their way in learning web development technologies.",
+      "Construction Project",
+      "Laundry Service Project",
+      "Payroll Management System",
+      "Cleaning Service Booking & Payment System"
     ],
   },
 ];
