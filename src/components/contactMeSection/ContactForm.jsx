@@ -6,33 +6,44 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState("");
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
-  };
   const form = useRef();
+
+  const handleName = (e) => setName(e.target.value);
+  const handleEmail = (e) => setEmail(e.target.value);
+  const handleMessage = (e) => setMessage(e.target.value);
+
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
-      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, {
-        publicKey: "I6HAT5mUZH7WHabGE",
-      })
+      .sendForm(
+        "service_j4a6a0i", // Your service ID
+        "template_bpgv6ll", // Your template ID
+        form.current,
+        "-1s5WXKUZVRoGS0KQ" // ✅ Pass your public key directly, NOT inside an object
+      )
       .then(
         () => {
           setEmail("");
           setName("");
           setMessage("");
-          setSuccess("Message Sent Succesfully");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+          setSuccess("Message Sent Successfully!");
+
+          // Clear message after 5 seconds
+        setTimeout(() => {
+          setSuccess("");
+        }, 5000);
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        setSuccess("Failed to send message. Please try again.");
+
+        // Clear error message after 5 seconds
+        setTimeout(() => {
+          setSuccess("");
+        }, 5000);
+      }
+    );
   };
 
   return (
@@ -58,13 +69,12 @@ const ContactForm = () => {
           onChange={handleEmail}
         />
         <textarea
-          type="text"
           name="message"
           rows="9"
           cols="50"
           placeholder="Message"
           required
-          className=" rounded-lg bg-lightBrown p-2"
+          className="rounded-lg bg-lightBrown p-2"
           value={message}
           onChange={handleMessage}
         />

@@ -9,6 +9,7 @@ import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import {   FaJava,FaPython  } from "react-icons/fa";
 
 const skills = [
   {
@@ -17,11 +18,11 @@ const skills = [
   },
   {
     skill: "Java",
-    icon: FaCss3Alt,
+    icon: FaJava,
   },
   {
     skill: "Python",
-    icon: IoLogoJavascript,
+    icon: FaPython,
   },
   {
     skill: "TypeScript",
