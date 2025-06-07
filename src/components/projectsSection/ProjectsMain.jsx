@@ -5,32 +5,32 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Dental Appointment Booking",
+    year: "Mar 2025",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    image: "../../public/images/dental.webp",
+    link: "https://dental-care-appointment-booking-fro-hazel.vercel.app/",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Travel Booking system",
+    year: "Dec 2024",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "../../public/images/Travel.webp",
+    link: "https://travel-4lma.vercel.app/",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Business company",
+    year: "May 2025",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "../../public/images/land.webp",
+    link: "https://business-gray.vercel.app/",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "RealEstate Business",
+    year: "Feb 2025",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "../../public/images/Estate.webp",
+    link: "https://business-m3pe.vercel.app/",
   },
 ];
 
@@ -46,17 +46,16 @@ const ProjectsMain = () => {
         <ProjectsText />
       </motion.div>
       <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-            />
-          );
-        })}
+        {projects.map((project, index) => (
+          <SingleProject
+            key={index}
+            name={project.name}
+            year={project.year}
+            align={project.align}
+            image={project.image}
+            link={project.link} // ✅ Pass the link here
+          />
+        ))}
       </div>
     </div>
   );
