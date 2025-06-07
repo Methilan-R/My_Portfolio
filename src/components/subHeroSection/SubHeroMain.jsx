@@ -6,7 +6,7 @@ const skills = ["Fast Learner", "Team Player", "Problem Solving", "Innovative Th
 
 const SubHeroMain = () => {
   return (
-    <div className="w-full border-y bg-brown border-lightGrey text-lightGrey flex justify-around uppercase xl:text-4xl md:text-2xl sm:text-4xl py-8 md:flex-row sm:flex-col items-center gap-4">
+    <div className="w-full border-y bg-brown px-4 border-lightGrey text-lightGrey flex justify-around uppercase xl:text-4xl md:text-2xl sm:text-2xl py-8 md:flex-row sm:flex-col items-center gap-4">
       {skills.map((skill, index) => (
         <motion.p
           key={skill}
