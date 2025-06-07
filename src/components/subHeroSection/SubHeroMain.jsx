@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-const skills = ["Fast Learner", "Team Work", "Adaptability", "Creativity"];
+const skills = ["Fast Learner", "Team Player", "Problem Solving", "Innovative Thinking"];
 
 const SubHeroMain = () => {
   return (
