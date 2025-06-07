@@ -1,5 +1,4 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+ 
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -8,40 +7,41 @@ import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import {   FaJava,FaPython  } from "react-icons/fa";
 
 const skills = [
-  {
-    skill: "HTML",
-    icon: FaHtml5,
-  },
-  {
-    skill: "CSS",
-    icon: FaCss3Alt,
-  },
-  {
-    skill: "JavaScript",
-    icon: IoLogoJavascript,
-  },
-  {
-    skill: "TypeScript",
-    icon: SiTypescript,
-  },
-  {
-    skill: "ReactJS",
-    icon: FaReact,
-  },
-  {
-    skill: "Redux",
-    icon: SiRedux,
-  },
-  {
-    skill: "NextJS",
-    icon: SiNextdotjs,
-  },
-  {
-    skill: "TailwindCSS",
-    icon: RiTailwindCssFill,
-  },
+ {
+     skill: "ReactJS",
+     icon: FaReact,
+   },
+   {
+     skill: "Java",
+     icon: FaJava,
+   },
+   {
+     skill: "Python",
+     icon: FaPython,
+   },
+   {
+     skill: "TypeScript",
+     icon: SiTypescript,
+   },
+   {
+     skill: "JavaScript",
+     icon: IoLogoJavascript,
+   },
+   {
+     skill: "Redux",
+     icon: SiRedux,
+   },
+   {
+     skill: "NextJS",
+     icon: SiNextdotjs,
+   },
+   {
+     skill: "TailwindCSS",
+     icon: RiTailwindCssFill,
+   },
 ];
 
 const AllSkillsSM = () => {
